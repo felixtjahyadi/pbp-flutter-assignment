@@ -3,6 +3,7 @@
 1. Stateless widget adalah widget statis yang mana seluruh konfigurasi di dalamnya telah diinisiasi sejak awal, tidak berubah karena aksi atau interaksi dari user. Sedangkan Stateful widget adalah widget yang dinamis yang mana widget ini dapat berubah atau diperbaharui kapan pun lewat interaksi dengan user atau perubahan dalam data. 
 
 2. Pada tugas kali ini, saya memakai widget:<br>
+MaterialApp() untuk membungkus widget-widget dalam dirinya untuk pembuatan aplikasi <br>
 Scaffold() untuk melakukan implementasi layout struktur Material Design visual standar atau basic seperti struktur template kosong  <br>
 AppBar() untuk membuat sebuah bar yang dapat berisikan toolbar ataupun widget lainnya<br>
 Center() untuk menaruh atau memposisikan child dalam dirinya sendiri di bagian tengah<br>
