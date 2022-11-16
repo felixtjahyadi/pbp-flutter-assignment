@@ -23,3 +23,38 @@ Icon() untuk menambahkan icon atau gambar kecil<br>
 Poin 1: Membuat app flutter dengan flutter create<br>
 Poin 2: Mengganti tulisan dalam navbar, mengganti tulisan ke genap, dan menambahkan tombol minus<br>
 Poin 3: Membuat fungsi untuk melakukan pengurangan atau decrement, membuat fungsi untuk mengembalikan kondisi/jenis bilangan genap atau ganjil, dan menambahkan situasi agar 0 adalah genap. Menerapkan dan mengisi bagian widget dengan fungsi yang sesuai serta melakukan kustomisasi untuk widget tersebut (color, padding)
+
+## Tugas 8
+
+1. Navigator.push digunakan untuk menambahkan route ke dalam sebuah stack yang ditangani oleh Navigator sedangkan Navigator.pushReplacement digunakan untuk menambahkan route ke dalam sebuah stack yang ditangani oleh Navigator tetapi item atau route yang berada sebelum dari route yang di push setelah terjadi push akan terhapus atau dibuang.
+
+2. Dalam proyek kali ini, saya menggunakan widget: <br>
+Scaffold() = kumpulan widget yang akan ditampilkan<br>
+AppBar() = Sebuah bar dipaling atas untuk keterangan nama window/halaman yang dibuka<br>
+Drawer() = Membuat sebuah daftar menu untuk navigasi ke berbagai aplikasi atau window/halaman yang terhubung<br>
+Form() = Membuat sebuah form yang akan digunakan isinya p<br>
+Center() = Untuk meletakkan item di dalamnya pada posisi tengah<br>
+Padding() = Untuk mengatur jarak di sekitar suatu item<br>
+Column() = Untuk menampilkan widget secara vertikal<br>
+TextFormField() = Untuk menampilkan tempat untuk menaruh input<br>
+DropdownButton() = Untuk membuat sebuah dropdown yang berisikan pilihan-pilihan <br>
+Icon() = menampilkan icon<br>
+Text() = menampilkan text<br>
+SizedBox() = membuat sebuah box <br>
+Container() = Tempat untuk menaruh dan membungkus kumpulan item yang berbeda-beda<br>
+ListView() = Menampilkan widget dalam bentuk list<br>
+
+3. Beberapa event yang ada dalam Flutter: <br>
+onPressed = mengeksekusi pada saat user menekan tombol<br>
+onChanged = mengeksekusi pada saat terjadi perubahan terhadap satu hal<br>
+onTap = mengeksekusi pada saat user melakukan tap atau klik ringan<br>
+onSaved = mengeksekusi pada saat terjadi penyimpanan atau save<br>
+onSubmitted = mengeksekusi pada saat pengumpulan ke form<br>
+
+4. Navigator merupakan suatu widget yang memiliki kegunaan untuk mengontrol sebuah stack yang mana stack tersebut berisikan route-route ke halaman yang lain. Navigator bekerja dengan cara menggunakan push dan pop seperti stack biasa yang mana pada saat ingin berpindah ke halaman baru maka akan dilakukan push sehingga akan menambahkan route ke stack dan menampilkannya lalu jika ingin ke halaman sebelumnya dapat menggunakan pop yang akan mengeluarkan isi teratas dari stack sehingga bagian paling atas stack merupakan halaman sebelumnya sehingga itu yang ditampilkan.
+
+5. Implementasi poin-poin: <br>
+Poin 1 = Membuat dan menambahkan drawer dalam widget build lalu memindahkannya ke drawer.dart dan membuat dan menggunakan class MyDrawer dalam pengerjaan bonus<br> 
+Poin 2 = Dalam drawer.dart di dalam class diisikan dengan ListTile yang berisikan Navigator ke class lainnya pada saat dipencet <br>
+Poin 3 = Membuat form.dart dan mengisikannya dengan widget yang dibutuhkan, 2 buah textformfield untuk input judul dan nomina, sebuah dropdownbutton untuk jenis dari budget, dan tombol untuk memilih tanggal atau datepicker untuk bonus<br>
+Poin 4 = Membuat data.dart yang akan menampilkan data yang telah diambil dari form dan disimpan dengan cara mengakses list dari data yang akan ditampilkan dan menambahkannya ke list baru yang pada saat penambahannya sudah disertai widget yang dipakai untuk membuat card berisikan data tersebut<br>
