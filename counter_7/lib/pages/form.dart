@@ -1,7 +1,7 @@
 import 'package:counter_7/main.dart';
 import 'package:flutter/material.dart';
-import 'package:counter_7/data.dart';
-import 'package:counter_7/drawer.dart';
+import 'package:counter_7/pages/data.dart';
+import 'package:counter_7/widgets/drawer.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

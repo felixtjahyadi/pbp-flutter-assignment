@@ -58,3 +58,30 @@ Poin 1 = Membuat dan menambahkan drawer dalam widget build lalu memindahkannya k
 Poin 2 = Dalam drawer.dart di dalam class diisikan dengan ListTile yang berisikan Navigator ke class lainnya pada saat dipencet <br>
 Poin 3 = Membuat form.dart dan mengisikannya dengan widget yang dibutuhkan, 2 buah textformfield untuk input judul dan nomina, sebuah dropdownbutton untuk jenis dari budget, dan tombol untuk memilih tanggal atau datepicker untuk bonus<br>
 Poin 4 = Membuat data.dart yang akan menampilkan data yang telah diambil dari form dan disimpan dengan cara mengakses list dari data yang akan ditampilkan dan menambahkannya ke list baru yang pada saat penambahannya sudah disertai widget yang dipakai untuk membuat card berisikan data tersebut<br>
+
+## Tugas 9
+
+1. Tentu bisa, tanpa membuat sebuah model terlebih dahulu kita masih bisa mengambil data JSON akan tetapi hal tersebut akan menyulitkan developer dikarenakan akan berupa raw data dan perlu memproses respon dari JSON tersebut secara manual sehingga tidak efisien. Oleh karena itu, penggunaan models tetap lebih baik untuk memudahkan developer melakukan operasi pada data-data tersebut.
+
+2. Widget yang saya gunakan untuk Tugas 9 ini: <br>
+FutureBuilder() = Untuk membuat widget berdasarkan interaksi dengan widget dan fetching data <br>
+GestureDetector() = Widget yang digunakan untuk mendeteksi aksi pengguna/user <br>
+ListView() = Untuk menampilkan secara list dengan scrolling <br>
+Checkbox() = Untuk menambahkan sebuat checkbox <br>
+Expanded() = Untuk memperluas child untuk memenuhi ruang yang ada <br>
+Flexible() = Mengontrol ukuran child untuk menyesuaikan dengan ruang yang ada <br>
+Widget-widget pada tugas sebelumnya 
+
+3. Mekanisme pengambilan dan menampilkan: <br>
+Pertama, membuat sebuah model kustom sesuai dengan apa saja data JSON yang akan diambil <br>
+Kedua, mengambil data atau fetching dengan menggunakan perintah get dari http <br> 
+Ketiga, mengolah data yang telah diambil menjadi Dart object dan mengimpannya dalam sebuah list <br>
+Keempat, menampilkan data tersebut dengan memanfaatkan widget yang sesuai <br>
+
+4. Implementasi: <br>
+Poin 1 = Menambahkan ListTile ke drawer.dart yang akan menghubungkan ke My Watch List <br>
+Poin 2 = Menambahkan folder model dan file mywatchlist.dart untuk diisikan data, saya juga melakukan refactor untuk setiap dart file <br>
+Poin 3 = Membuat file untuk menampilkan data yaitu mywatchlist_page.dart dan membuat file untuk melakukan fetching ke data JSON yaitu fetchmywatchlist.dart, dalam file fetch tersebut ada fungsi yang akan melakukan get ke link JSON dari Tugas 3, serta menghubungkan setiap data pada page dengan sebuah halaman detail <br>
+Poin 4 = Membuat file untuk menampilkan bagian detail yang berasal dari data yaitu mywatchlist_details.dart <br>
+Poin 5 = Membuat sebuah elevated button dengan push replacement ke halaman sebelumnya <br>
+
